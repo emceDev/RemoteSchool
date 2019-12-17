@@ -7,3 +7,10 @@ def classroom_template(request):
 @login_required
 def course_preview(request):
     return render(request, 'classroom/course_preview.html')
+
+@login_required
+def student(request):
+    return render(request, 'classroom/student.html')
+@login_required
+def teacher(request):
+    return render(request, 'classroom/teacher.html')
